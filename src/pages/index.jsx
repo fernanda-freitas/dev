@@ -1,10 +1,19 @@
 import { Container } from '@/components/atoms/Container'
+import MarginYLarge from '@/components/atoms/MarginYLarge'
+import { useContext } from 'react'
+import { ThemeContext } from '@/context/ThemeContext'
 
 export default function Home() {
+	const { toggleTheme } = useContext(ThemeContext)
+
 	return (
-		<Container>
-			<h1>Fernanda Freitas Martinez</h1>
-			<h2>Creative Developer</h2>
-		</Container>
+		<MarginYLarge>
+			<Container>
+				<h2 className='copy-h1'>
+					Hi, I'm frontend developer crafting digital products, rigorous systems and fluid experiences.
+				</h2>
+				<button onClick={toggleTheme}>change theme</button>
+			</Container>
+		</MarginYLarge>
 	)
 }

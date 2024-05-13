@@ -5,25 +5,55 @@
 @import './utils.scss';
 @import './reset.scss';
 @import './variables.scss';
+@import './typography.scss';
 
 $base-font-size: 10px;
 $easing: cubic-bezier(0.24, 0.16, 0, 0.95);
 $duration: 300ms;
 $transition: $easing $duration;
 
+#__next {
+	height: 100%;
+}
+
 html {
 	// Setting font-size to 10px makes it easy to work with rem* units
 	// *1rem = 10px
 	font-size: $base-font-size;
+	height: 100%;
 }
 
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	height: 100%;
+}
+
+.light-theme {
 	background-color: $light-gray;
 	color: $light-black;
+
+	& *::selection {
+		background-color: $light-black;
+		color: $light-gray;
+	}
+}
+
+.dark-theme {
+	background-color: $light-black;
+	color: $light-gray;
+
+	& *::selection {
+		background-color: $light-gray;
+		color: $light-black;
+	}
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 2rem;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 1.5rem;
 }

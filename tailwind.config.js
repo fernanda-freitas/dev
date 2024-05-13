@@ -19,14 +19,14 @@ module.exports = {
 			1920: '1920px',
 			'media-hover': { raw: '(hover: hover) and (pointer: fine)' },
 		},
-		colors: {
-			inherit: 'inherit',
-			transparent: 'transparent',
-			current: 'currentColor',
-			black: '#000',
-			white: '#FFF',
-		},
 		extend: {
+			colors: {
+				inherit: 'inherit',
+				transparent: 'transparent',
+				current: 'currentColor',
+				black: '#000',
+				white: '#FFF',
+			},
 			spacing: {
 				10: '1rem',
 				16: '1.6rem',
@@ -36,6 +36,7 @@ module.exports = {
 				40: '4rem',
 				50: '5rem',
 				60: '6rem',
+				90: '9rem',
 			},
 			transitionDuration: {
 				DEFAULT: '300ms',
