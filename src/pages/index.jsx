@@ -1,7 +1,10 @@
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Container } from '@/components/atoms/Container'
 
 export default function Home() {
-	return <div>Dev Teste 3</div>
+	return (
+		<Container>
+			<h1>Fernanda Freitas Martinez</h1>
+			<h2>Creative Developer</h2>
+		</Container>
+	)
 }
