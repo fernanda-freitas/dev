@@ -13,6 +13,7 @@ import {
 	Figtree,
 } from 'next/font/google'
 import { ThemeProvider } from '@/context/ThemeContext'
+import { Cursor } from '@/components/atoms/Cursor'
 
 const inter = Inter({ subsets: ['latin'], weight: ['500'] })
 const redditMono = Reddit_Mono({ subsets: ['latin'], weight: ['500'] })
@@ -28,6 +29,7 @@ const figtree = Figtree({ subsets: ['latin'], weight: ['500'] }) // Preferida
 export default function App({ Component, pageProps }) {
 	return (
 		<ThemeProvider>
+			<Cursor />
 			<div className={`${outfit.className}`}>
 				<Component {...pageProps} />
 			</div>
