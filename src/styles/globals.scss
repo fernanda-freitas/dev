@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./utils.scss";
+@import "./reset.scss";
+
+$base-font-size: 10px;
+$easing: cubic-bezier(0.24, 0.16, 0, 0.95);
+$duration: 300ms;
+$transition: $easing $duration;
+
+html {
+  // Setting font-size to 10px makes it easy to work with rem* units
+  // *1rem = 10px
+  font-size: $base-font-size;
+}
