@@ -8,7 +8,7 @@ export default function Menu({ items }) {
 	return (
 		<div className='flex justify-between'>
 			<span className='copy-uppercase'>Fernanda Freitas</span>
-			<ul className='flex gap-16'>
+			<ul className='flex gap-x-10 640:gap-x-16'>
 				<li>
 					<LinkText href='mailto:idea.fernanda@gmail.com'>Email</LinkText>
 				</li>

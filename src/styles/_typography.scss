@@ -6,13 +6,13 @@
 }
 
 .copy-default {
-	@include fontSizeResponsive(41.1, 1.4, 144, 1.6);
-	line-height: 1;
+	@include fontSizeResponsive(41.1, 1.4, 144, 1.5);
+	line-height: 1.2;
 	letter-spacing: 0px;
 }
 
 .copy-uppercase {
-	@include fontSizeResponsive(41.1, 1.4, 144, 1.4);
+	@include fontSizeResponsive(41.1, 1.2, 144, 1.4);
 	line-height: 1;
 	text-transform: uppercase;
 	letter-spacing: 0px;
