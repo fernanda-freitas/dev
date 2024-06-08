@@ -47,6 +47,7 @@ body {
 .dark-theme {
 	background-color: $black;
 	color: $light-gray;
+	transition: $transition-500;
 
 	& *::selection {
 		background-color: $light-gray;
