@@ -7,7 +7,7 @@ export default function Content() {
 			<div className='col-span-12 640:col-span-8'>
 				<span className='copy-default'>
 					A frontend developer from Brazil, currently based in Portugal, with a strong connection to design due to her
-					background as a designer. Specialized in visual and interface design, she is always eager to create meaningful
+					background in the field. Specialized in visual and interface design, she is always eager to create meaningful
 					pieces where creativity and excitement harmonize as the main driving forces.
 				</span>
 			</div>
