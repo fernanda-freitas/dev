@@ -1,30 +1,33 @@
 import LinkText from '@/components/atoms/LinkText'
-import { useContext } from 'react'
-import { ThemeContext } from '@/context/ThemeContext'
+import ThemeButton from '@/components/atoms/ThemeButton'
 
-export default function Menu({ items }) {
-	const { toggleTheme } = useContext(ThemeContext)
-
+export default function Menu() {
 	return (
-		<div className='flex justify-between'>
+		<div className='flex justify-between items-center'>
 			<span className='copy-uppercase'>Fernanda Freitas</span>
-			<ul className='flex gap-x-10 640:gap-x-16'>
+			<ul className='flex gap-x-10 640:gap-x-16 items-center'>
 				<li>
-					<LinkText href='mailto:idea.fernanda@gmail.com'>Email</LinkText>
+					<LinkText href='mailto:idea.fernanda@gmail.com' target='_self'>
+						Email
+					</LinkText>
 				</li>
 				<li>
-					<LinkText href='https://www.linkedin.com/in/fernanda-freitas-martinez-8b9a792a/'>Linkedin</LinkText>
+					<LinkText href='https://www.linkedin.com/in/fernanda-freitas-martinez-8b9a792a/' target='_blank'>
+						Linkedin
+					</LinkText>
 				</li>
 				<li>
-					<LinkText href='https://github.com/fernanda-freitas'>Github</LinkText>
+					<LinkText href='https://github.com/fernanda-freitas' target='_blank'>
+						Github
+					</LinkText>
 				</li>
 				<li>
-					<LinkText href='https://www.instagram.com/fernanda_freitas_martinez/'>Instagram</LinkText>
+					<LinkText href='https://www.instagram.com/fernanda_freitas_martinez/' target='_blank'>
+						Instagram
+					</LinkText>
 				</li>
 				<li>
-					<button className='copy-uppercase' onClick={toggleTheme}>
-						Theme
-					</button>
+					<ThemeButton />
 				</li>
 			</ul>
 		</div>

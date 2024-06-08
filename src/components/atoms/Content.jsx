@@ -14,7 +14,10 @@ export default function Content() {
 			</div>
 			<div className='col-span-12 640:col-span-6'>
 				<span className='copy-default'>
-					Currently at <LinkText href='https://v-a.studio/'>v-a studio</LinkText>
+					Currently at{' '}
+					<LinkText href='https://v-a.studio/' target='_blank'>
+						v-a studio
+					</LinkText>
 				</span>
 			</div>
 		</Grid>
