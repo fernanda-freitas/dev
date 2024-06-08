@@ -3,3 +3,9 @@ $gray: #dedcd5;
 $dark-gray: #c9c7c0;
 $light-black: #222222;
 $black: #000000;
+
+$easing: cubic-bezier(0.24, 0.16, 0, 0.95);
+$duration-250: 250ms;
+$duration-350: 350ms;
+$transition-250: $easing $duration-250;
+$transition-350: $easing $duration-350;

@@ -37,6 +37,10 @@ body {
 		background-color: $black;
 		color: $light-gray;
 	}
+
+	.link-text::after {
+		background-color: $black;
+	}
 }
 
 .dark-theme {
@@ -47,13 +51,31 @@ body {
 		background-color: $light-gray;
 		color: $black;
 	}
+
+	.link-text::after {
+		background-color: $light-gray;
+	}
 }
 
-h1 {
-	font-size: 2rem;
-	line-height: 1;
-}
+.link-text {
+	position: relative;
+	padding-bottom: 2px;
 
-h2 {
-	font-size: 1.5rem;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transform-origin: left;
+		width: 100%;
+		height: 1px;
+		transform: scaleX(0);
+		transition: $transition-350;
+	}
+
+	@media (hover: hover) {
+		&:hover::after {
+			transform: scaleX(1);
+		}
+	}
 }
