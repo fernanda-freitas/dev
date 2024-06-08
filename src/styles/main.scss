@@ -31,21 +31,21 @@ body {
 
 .light-theme {
 	background-color: $light-gray;
-	color: $light-black;
+	color: $black;
 
 	& *::selection {
-		background-color: $light-black;
+		background-color: $black;
 		color: $light-gray;
 	}
 }
 
 .dark-theme {
-	background-color: $light-black;
+	background-color: $black;
 	color: $light-gray;
 
 	& *::selection {
 		background-color: $light-gray;
-		color: $light-black;
+		color: $black;
 	}
 }
 
