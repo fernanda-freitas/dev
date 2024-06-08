@@ -3,7 +3,7 @@ import Grid from '@/components/atoms/Grid'
 
 export default function Content() {
 	return (
-		<Grid className='pt-[50vh] flex flex-col gap-y-[100px]'>
+		<Grid className='pt-[50vh] flex flex-col gap-y-40 640:gap-y-[90px]'>
 			<div className='col-span-12 640:col-span-8'>
 				<span className='copy-default'>
 					A frontend developer from São Paulo - Brazil, currently based in Portugal, with a strong connection to design

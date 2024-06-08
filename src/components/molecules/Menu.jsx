@@ -26,7 +26,7 @@ export default function Menu() {
 						Instagram
 					</LinkText>
 				</li>
-				<li>
+				<li className='hidden 640:block'>
 					<ThemeButton />
 				</li>
 			</ul>
