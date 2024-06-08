@@ -32,7 +32,7 @@ body {
 .light-theme {
 	background-color: $light-gray;
 	color: $black;
-	transition: $transition-350;
+	transition: $transition-500;
 
 	& *::selection {
 		background-color: $black;
