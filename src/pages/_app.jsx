@@ -1,26 +1,23 @@
 import '@/styles/main.scss'
-import {
-	Jost,
-	Inter,
-	Reddit_Mono,
-	Poppins,
-	Raleway,
-	Plus_Jakarta_Sans,
-	DM_Sans,
-	Barlow,
-	Outfit,
-	Space_Grotesk,
-	Figtree,
-} from 'next/font/google'
+import { Outfit } from 'next/font/google'
 import { ThemeProvider } from '@/context/ThemeContext'
 import { Cursor } from '@/components/atoms/Cursor'
+import { useEffect, useState } from 'react'
 
-const outfit = Outfit({ subsets: ['latin'], weight: ['400', '500', '600'] }) // Preferida
+const outfit = Outfit({ subsets: ['latin'], weight: ['400'] })
 
 export default function App({ Component, pageProps }) {
+	const [isTouchDevice, setIsTouchDevice] = useState(false)
+
+	useEffect(() => {
+		if ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0) {
+			setIsTouchDevice(true)
+		}
+	}, [])
+
 	return (
 		<ThemeProvider>
-			<Cursor />
+			{!isTouchDevice && <Cursor />}
 			<div className={`${outfit.className}`}>
 				<Component {...pageProps} />
 			</div>
