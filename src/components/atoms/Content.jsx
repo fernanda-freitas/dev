@@ -7,9 +7,9 @@ export default function Content() {
 			<div className='col-span-12 640:col-span-8'>
 				<span className='copy-default'>
 					A frontend developer from São Paulo - Brazil, currently based in Portugal, with a strong connection to design
-					arising from a background in the field. Specializing in visual and creative development using cutting-edge
-					technologies such as Next.js and React, there is always eagerness to create impactful pieces where excitement
-					and precision harmonize as the main driving forces.
+					arising from a background in the field. I use on a daily basis technologies like Next.js, Tailwind, Strapi,
+					along with various third-party services and helpfull libraries. I am constantly inspired by the desire to
+					create meaningful work, viewing each project as a chance to challenge myself and deliver impactful pieces.
 				</span>
 			</div>
 			<div className='col-span-12 640:col-span-6'>
