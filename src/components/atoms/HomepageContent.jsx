@@ -95,9 +95,7 @@ export default function Content() {
 	return (
 		<div ref={containerRef} className='flex flex-col gap-y-[40px] 768:gap-y-[10vh] pt-[10vh]'>
 			<Double projects={[projects[0], projects[1]]} />
-			{/* <motion.span style={{y:y2}} className='block copy-header text-right'>Great ideas in motion</motion.span> */}
 			<Double projects={[projects[2], projects[3]]} reversed={true}/>
-			{/* <motion.span style={{y:y3}} className='block copy-header text-right'>design first</motion.span> */}
 			<Double projects={[projects[4], projects[5]]} />
 			<Double projects={[projects[6], projects[7]]} reversed={true}/>
 		</div>
