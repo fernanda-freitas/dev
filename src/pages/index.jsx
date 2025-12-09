@@ -1,14 +1,11 @@
 import MarginDefault from '@/components/atoms/MarginDefault'
 import Menu from '@/components/molecules/Menu'
-import Content from '@/components/atoms/Content'
+import HomepageContent from '@/components/atoms/HomepageContent'
 import Footer from '@/components/atoms/Footer'
 
 export default function Home() {
+
 	return (
-		<MarginDefault>
-			<Menu />
-			<Content />
-			<Footer />
-		</MarginDefault>
+		<HomepageContent />
 	)
 }

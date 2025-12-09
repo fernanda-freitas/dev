@@ -6,31 +6,36 @@
 @import './reset.scss';
 @import './variables.scss';
 @import './typography.scss';
+@import './double.scss';
 
 $base-font-size: 10px;
 $easing: cubic-bezier(0.24, 0.16, 0, 0.95);
 $duration: 300ms;
 $transition: $easing $duration;
 
-#__next {
-	height: 100%;
-}
-
 html {
 	// Setting font-size to 10px makes it easy to work with rem* units
 	// *1rem = 10px
 	font-size: $base-font-size;
-	height: 100%;
+	min-height: 100vh;
 }
 
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	height: 100%;
+	min-height: 100vh;
+}
+
+#__next, .dark-theme {
+	min-height: 100vh;
+}
+
+main {
+  padding-bottom: 10vh;
 }
 
 .light-theme {
-	background-color: $light-gray;
+	background-color: $white;
 	color: $black;
 	transition: $transition-500;
 
@@ -81,3 +86,5 @@ body {
 		}
 	}
 }
+
+

@@ -1,35 +1,27 @@
 import LinkText from '@/components/atoms/LinkText'
 import ThemeButton from '@/components/atoms/ThemeButton'
+import AnimatedLogotype from '@/components/atoms/AnimatedLogotype'
+import Link from 'next/link'
 
 export default function Menu() {
 	return (
-		<div className='flex justify-between items-center'>
-			<span className='copy-uppercase'>Fernanda Freitas</span>
-			<ul className='flex gap-x-10 640:gap-x-16 items-center'>
+		<>
+			<AnimatedLogotype />
+			<ul className='absolute top-24 right-16 flex gap-x-10 640:gap-x-[32px] items-center'>
+				<li>
+					<Link href='/about' className='copy-link link-text hoverable'>
+						About
+					</Link>
+				</li>
 				<li>
 					<LinkText href='mailto:idea.fernanda@gmail.com' target='_self'>
-						Email
-					</LinkText>
-				</li>
-				<li>
-					<LinkText href='https://www.linkedin.com/in/fernanda-freitas-martinez-8b9a792a/' target='_blank'>
-						Linkedin
-					</LinkText>
-				</li>
-				<li>
-					<LinkText href='https://github.com/fernanda-freitas' target='_blank'>
-						Github
-					</LinkText>
-				</li>
-				<li>
-					<LinkText href='https://www.instagram.com/fernanda_freitas_martinez/' target='_blank'>
-						Instagram
+						Contact
 					</LinkText>
 				</li>
 				<li className='hidden 640:block'>
 					<ThemeButton />
 				</li>
 			</ul>
-		</div>
+		</>
 	)
 }
