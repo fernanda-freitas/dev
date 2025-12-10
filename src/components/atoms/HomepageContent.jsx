@@ -12,7 +12,7 @@ export default function Content() {
 			client: "Petrotec Group",
 			href:'https://group.petrotec.com/',
 			description: "Website para uma produtora independente de filmes.",
-			src: "mariosoares.mov",
+			src: "/dev/mariosoares.mov",
 			year: 2023,
 		},
 		{
@@ -20,7 +20,7 @@ export default function Content() {
 			client: "Rocaline ceramics",
 			href:'https://rocalineceramics.com/',
 			description: "Website para uma produtora independente de filmes.",
-			src: "rocaline.mov",
+			src: "/dev/rocaline.mov",
 			year: 2023,
 		},
 		{
@@ -28,7 +28,7 @@ export default function Content() {
 			client: "Maus da Fita",
 			href:'https://mausdafita.pt/',
 			description: "Website para uma produtora independente de filmes.",
-			src: "mausdafita.png",
+			src: "/dev/mausdafita.png",
 			year: 2023,
 		},
 		{
@@ -36,7 +36,7 @@ export default function Content() {
 			client: "Good Company",
 			href:'https://goodcompanybooks.com/',
 			description: "Website para uma produtora independente de filmes.",
-			src: "goodcompany2.png",
+			src: "/dev/goodcompany2.png",
 			year: 2023,
 		},
 		{
@@ -44,7 +44,7 @@ export default function Content() {
 			client: "Everyone",
 			href:'https://www.everyone.film/',
 			description: "Website para uma produtora independente de filmes.",
-			src: "everyone.png",
+			src: "/dev/everyone.png",
 			year: 2023,
 		},
 		{
@@ -52,7 +52,7 @@ export default function Content() {
 			client: "Petrotec Group",
 			href:'https://group.petrotec.com/',
 			description: "Website para uma produtora independente de filmes.",
-			src: "petrotec2.mov",
+			src: "/dev/petrotec2.mov",
 			year: 2023,
 		},
 		{
@@ -60,7 +60,7 @@ export default function Content() {
 			client: "Revolution Needles",
 			href:'https://revolutionneedles.com/store/pt',
 			description: "Website para uma produtora independente de filmes.",
-			src: "revolutionneedles2.mov",
+			src: "/dev/revolutionneedles2.mov",
 			year: 2023,
 		},
 		{
@@ -68,7 +68,7 @@ export default function Content() {
 			client: "Rvierscape",
 			href:'https://riverscape.pt/',
 			description: "Website para uma produtora independente de filmes.",
-			src: "riverscape.png",
+			src: "/dev/riverscape.png",
 			year: 2023,
 		},
 	]
